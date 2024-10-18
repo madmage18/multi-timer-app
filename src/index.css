@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Handjet:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'EncodeSans';
+  src: url('/fonts/EncodeSansNormal-900-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body {
+  font-family: 'EncodeSans', sans-serif;
+} */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body, .uw-husky{
+  background: #e8e3d3; 
+  font-family: 'EncodeSans', sans-serif;
+}
+
+#root {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#root, .uw-husky{
+  background: #4b2e83;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding: 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 10rem));
+  justify-content: center;
+}
+
+ul, .uw-husky{
+  font-family: 'EncodeSans', sans-serif;
+}
+
+ul li {  
+  padding: 1rem;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Regular shadow */
+              0 6px 20px rgba(0, 0, 0, 0.19); /* Larger shadow for depth */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+ul li:hover{
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3),
+              0 12px 40px rgba(0, 0, 0, 0.25);
+} 
+
+ul li, .uw-husky{
+  background: white;
+  color: #4b2e83;
+}
+
+ul h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 5px;
+}
+
+ul p {
+  text-align: center;
+  font-size: 1.25rem;
+  
+}
+
+ul p, .uw-husky {
+  color: #4b2e83;
+}
+
+ul progress {
+  width: 100%;
+  height: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+ul progress::-webkit-progress-bar {
+  border-radius: 6px;
+}
+
+ul progress::-webkit-progress-bar, .uw-husky{
+  background: #ffc700;
+} 
+
+ul progress::-webkit-progress-value {
+  border-radius: 6px;
+}
+
+ul progress::-webkit-progress-value {
+  background: #4b2e83;
+}
+
+label {
+  display: block;
+  font-size: 0.85rem;
+ 
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+label, .uw-husky{
+  color: #e8e3d3;
+}
+
+input {
+  display: block;
+  font: inherit;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #486560;
+  
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #07302a;
+}
+
+input, .uw-husky{
+  background-color: white;
+}
+
+.button {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button, .uw-husky{
+  border: 1px solid #85754d;
+  background-color: #85754d;
+}
+
+.button:hover,
+.button:active {
+  background-color: green;
+  border-color: blue; 
+}
+
+.button:hover,
+.button:active, .uw-husky{
+  background-color: #ffc700;
+  border-color: #ffc700;
+  color: #4b2e83;
+}
+
+.uw-husky-popup {
+  color: #4b2e83;
+}
+
+#add-timer {
+  max-width: 20rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+}
+
+.popup-content .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.popup-content .form-group input {
+  margin-right: 10px;
+}
+
+.popup-content .uw-husky {
+  color: #4b2e83;
+}
+
+.popup-content .uw-husky-button {
+  background-color: #4b2e83;
+}
+
+.popup-content label {
+  margin-right: 10px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup-content button:hover {
+  background-color: #ffc700;
+  border-color: #ffc700;
+  color: #4b2e83;
+}
+
