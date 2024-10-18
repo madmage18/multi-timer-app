@@ -9,8 +9,7 @@
 
 ## To Add to Git Issues:
 - Add local storage or redis to persist data
-- Address accessibility issues identified by Vercel.
-- Memoize components to improve rendering performance. (Add screenshots to issue of current performance slow downs)
+- fix audio delay for first timer (only occurs when app loads for the first time)
 - using name instead of unique ids to differentiate Timers. May cause issues in future if multiple timers with the same name.
 - interfaces are spread across files. (follow best practice and keep the in separate files, keep files clean)
 - should resuse form component and input components in timerPopup component. (fix repetative code)
