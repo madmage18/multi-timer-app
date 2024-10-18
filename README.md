@@ -5,6 +5,8 @@
 - useEffect() hook used heavily to manage the side effects of state changes. useReducer() used for state update logic. User entered data is sanitized. /shared folder feature reusable subcomponents. favicon added.
 - App is preloaded with three timers. Users may Reset, Start, Stop all Timers, Add/Delete individual Timers, Update 'completed interval' tally. 
 
+<b>Main branch deployed at: https://multi-timer-app.vercel.app/</b><br>
+
 ## To Add to Git Issues:
 - Add local storage or redis to persist data
 - Address accessibility issues identified by Vercel.
@@ -24,6 +26,6 @@ Dropdown options will include:
     Selections will toggle the color scheme and athletic logos used in the App UI.
 
 ## Deployments:
- - Vercel deployment:  
+ - Vercel deployment: https://multi-timer-app.vercel.app/
 
 - Branch has also been updated to deploy to Heroku. Not deployed to Heroku at this time 

@@ -4,7 +4,7 @@ import {
   useTimersContext,
   type Timer as TimerProps,
 } from "../store/timers-context.tsx";
-// import alertSound from "../../public/alert-sound.mp3";
+import alertSound from "../assets/alert-sound.mp3";
 
 export default function Timer(props: TimerProps) {
   const interval = useRef<number | null>(null); // holds timer reference
@@ -22,7 +22,7 @@ export default function Timer(props: TimerProps) {
   } = useTimersContext(); // destructured values from timersContext
 
   const playSound = () => {
-    const audio = new Audio("../../public/alert-sound.mp3");
+    const audio = new Audio(alertSound);
     audio.play();
   };
 
@@ -45,7 +45,7 @@ export default function Timer(props: TimerProps) {
     // starting all Timers starts Timer
     if (isRunning) {
       // updates remainingTime state using setInterval((() => {}), []). Used to set Timer progress bar value.Updates every 50 ms
-      timer = setInterval(function () {
+      timer = window.setInterval(function () {
         setRemainingTime((prevTime) => {
           if (prevTime <= 0) {
             // timer stops at 0
@@ -79,7 +79,7 @@ export default function Timer(props: TimerProps) {
   }, [remainingTime]);
 
   // All timers completed effects. (state update triggers TimersPopup)
-  useEffect(() => {    
+  useEffect(() => {
     if (timers.every((timer) => timer.isCompleted)) {
       markAllTimersCompleted();
     }
