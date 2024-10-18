@@ -7,13 +7,9 @@
 
 <b>Main branch deployed at: https://multi-timer-app.vercel.app/</b><br>
 
-## To Add to Git Issues:
-- Add local storage or redis to persist data
-- fix audio delay for first timer (only occurs when app loads for the first time)
-- using name instead of unique ids to differentiate Timers. May cause issues in future if multiple timers with the same name.
-- interfaces are spread across files. (follow best practice and keep the in separate files, keep files clean)
-- should resuse form component and input components in timerPopup component. (fix repetative code)
-- not using eslint at this time. Add it / enable it.
+## Git Issues & Improvements:
+- Issues/ places for improvement in project have been documented as Git Issues here: https://github.com/madmage18/multi-timer-app/issues <br>
+Issues to be fixed on rolling basis.
 
 ## Future enhancements:
 - Add Popup on inital load of app with "Please select you school" and dropdown select.
